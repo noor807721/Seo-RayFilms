@@ -1,0 +1,85 @@
+
+.See_more_hedding {
+  display: flex;
+  color: var(--text);
+}
+.See_more_hedding hr {
+  height: 5px;
+  width: 100%;
+  background: var(--secondbg);
+  margin: auto 0 auto 0;
+  border: none;
+}
+.See_more_hedding h1 {
+  padding: 0 0.7rem;
+  font-size: 1.5rem;
+}
+
+/* --------------------------------------------------------.seeMore -Card SeeMore css */
+.seeMore {
+  width: 100%;
+  height: 100%;
+}
+.seeMore .ShowingCard{
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.ShowingCard .Card {
+  float: left;
+  width: calc(100% / 5);
+  padding: 0 4px 8px 4px;
+  color: var(--text);
+  text-decoration: none;
+  position: relative;
+}
+.ShowingCard .Card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ShowingCard .Card .rating {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: var(--secondtxt);
+  background-color: var(--thirdbg);
+  width: 45px;
+  height: 20px;
+  text-align: center;
+  border-bottom-right-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.ShowingCard .Card .movie_details {
+  width: 100%;
+  padding: 4px 5px 4px 0;
+  font-size: 0.78rem;
+  height: 100%;
+}
+
+.ShowingCard .Card .movie_details .movie_year {
+  font-size: 0.7rem;
+  line-height: 0px;
+  margin-top: -4px;
+}
+@media screen and (max-width: 520px) {
+  .ShowingCard .Card {
+    width: calc(100% / 3);
+  }
+
+}
+
+/* -----------------------------------------------------------------pagination css here  */
+.pagination{
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+

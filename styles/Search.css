@@ -1,0 +1,43 @@
+
+/* --------------------------------------------------search input css here*/
+.searchBar{
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid var(--thirdbg);
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  background: var(--bg);
+  outline: none;
+}
+input[type="text"]{
+  color: var(--text);
+  padding: 0 12px ;
+}
+
+.searchTerm:focus{
+  color: var(--thirdbg);
+}
+
+.searchButton {
+  width: 50px;
+  height: 45px;
+  border: 3px solid var(--thirdbg);
+  background: var(--thirdbg);
+  text-align: center;
+  color: var(--secondtxt);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
