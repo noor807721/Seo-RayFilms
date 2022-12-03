@@ -27,7 +27,15 @@ export const getSearch = async (title) => {
     return [];
   }
 };
-
+export const getGenre = async ({ title, page }) => {
+  try {
+    const res = await fetch(`${API}/${title}/${page}/6/-1`);
+    const data = res.json();
+    return data;
+  } catch (e) {
+    return [];
+  }
+};
 export const getDetails = async (imdbId) => {
   const res = await fetch(`${API}/${imdbId}`);
   const data = await res.json();

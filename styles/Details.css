@@ -306,18 +306,18 @@ textarea {
   width: 100%;
 }
 
-.seeHedding {
+.Hedding {
   display: flex;
   color: var(--text);
 }
-.seeHedding hr {
+.Hedding hr {
   height: 5px;
   width: 100%;
-  background: var(--secondbg);
+  background: var(--text);
   margin: auto 0 auto 0;
   border: none;
 }
-.seeHedding h1 {
+.Hedding h1 {
   padding: 0 0.7rem;
   font-size: 1.5rem;
 }

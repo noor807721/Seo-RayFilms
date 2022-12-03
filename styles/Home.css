@@ -62,7 +62,7 @@
   color: var(--text);
   width: 100%;
   font-size: 1.2rem;
-  border-left: 3px solid var(--bdcolor);
+  border-left: 3px solid var(--thirdbg);
   line-height: 1.8rem;
   padding-left: 0.6rem;
   display: flex;

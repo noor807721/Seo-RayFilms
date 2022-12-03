@@ -13,7 +13,7 @@ function Slider({hedding,data}) {
         </div>
         <div className="icons h6">
           <div className="count_movie">
-            <Link href={`/${hedding}/1/6/-1`}>
+            <Link href={`/genre/${hedding}?page=1`}>
               <span className="see-all">SEE ALL</span>
             </Link>
           </div>

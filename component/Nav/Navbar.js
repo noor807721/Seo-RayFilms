@@ -32,7 +32,7 @@ function Navbar() {
           {list.map((title, i) => {
             return (
               <li key={i}>
-                <Link href={`/${title}/1/1`}>
+                <Link href={`/genre/${title}?page=1`}>
                   <RiMovie2Fill className="menu-iconx" />
                   <span>{title}</span>
                 </Link>
