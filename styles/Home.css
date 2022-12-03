@@ -1,0 +1,290 @@
+.RayFilms{
+  width: 100%;
+}
+
+/* -----------------------------------------------------------------------------Carousal css  */
+.Carousel {
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow-x: scroll;
+  margin-bottom: 2rem;
+  scroll-snap-type: inline mandatory;
+}
+
+.Carousel .Card {
+  width: 122px;
+  height: 10rem;
+  color: var(--text);
+  text-decoration: none;
+  font-style: none;
+  position: relative;
+  margin: 0 6px 7px 0;
+  scroll-snap-align: start;
+  scroll-padding-inline: 1rem;
+}
+
+
+.Carousel .movie_details {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 40px 10px;
+  color: var(--secondtxt);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000);
+}
+.Carousel .rating{
+  display: none;
+}
+/* .Carousel .movie_details .movie_name {
+  padding: 0;
+  margin: 0;
+}
+.Carousel .movie_details .movie_year {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+} */
+
+.Carousel::-webkit-scrollbar {
+  height: 3px;
+  background: var(--scrollbar);
+}
+.Carousel::-webkit-scrollbar-thumb {
+  margin-top: 2px;
+  height: 4px;
+  border-radius: 20px;
+  background: var(--text);
+}
+/* ----------------------------------------------------------------------------SliderHedding css  */
+
+.title {
+  color: var(--text);
+  width: 100%;
+  font-size: 1.2rem;
+  border-left: 3px solid var(--bdcolor);
+  line-height: 1.8rem;
+  padding-left: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Outfit", sans-serif;
+}
+
+.title .icons {
+  margin: auto 0.2rem auto 0;
+  display: flex;
+}
+.see-all {
+  line-height: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 3px;
+  margin-top: 30px;
+  color: var(--secondtxt);
+  background: var(--thirdbg);
+  text-decoration: none;
+}
+
+.title .icons .arrow .fas {
+  font-size: 25px;
+  font-weight: 900;
+  border: solid 1px var(--thirdbg);
+  border-radius: 0.2rem;
+  margin-left: 15px;
+  padding: 2px 15px;
+}
+.title .icons .arrow .fas:hover {
+  background: var(--bghover);
+}
+
+/* ----------------------------------------------------------------------------Slider css  */
+.Main_Slider {
+  width: 100%;
+  height: 13.4rem;
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: 2rem;
+}
+ .Card {
+  width: 122px;
+  height: 10rem;
+  color: var(--text);
+  text-decoration: none;
+  font-style: none;
+  position: relative;
+  margin: 0 7px 0 0;
+}
+ .Card .thumbnail {
+  width: 120px;
+  height: 10rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+ .Card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ .Card .rating {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: var(--secondtxt);
+  background: var(--thirdbg);
+  width: 45px;
+  height: 20px;
+  text-align: center;
+  border-bottom-right-radius: 4px;
+  font-size: 0.78rem;
+}
+
+ .Card .movie_details {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  font-size: 0.78rem;
+}
+ .Card .movie_details .movie_year {
+  font-size: 0.7rem;
+  line-height: 0px;
+  margin-top: -4px;
+}
+
+.Main_Slider::-webkit-scrollbar {
+  height: 2px;
+  background: var(--scrollbar);
+}
+.Main_Slider::-webkit-scrollbar-thumb {
+  margin-top: 2px;
+  height: 4px;
+  border-radius: 20px;
+  background: var(--text);
+}
+
+/* ---------------------------------------------top movie css here  */
+.TopCard {
+  position: relative;
+  padding: 10px 0;
+  display: flex;
+  min-height: 70px;
+  border-bottom: 1px solid var(--thirdbg);
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: var(--text);
+}
+.TopCard .thumbnail {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 20%);
+}
+
+.TopCard .thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.TopCard .puesto {
+  margin: auto 0 auto 3px;
+  width: 30px;
+  font-size: 12px;
+  text-align: center;
+  padding: 21.4px 0;
+  background: var(--secondbg);
+}
+.TopCard .rating {
+  margin: auto 0 auto 8px;
+  font-size: 17px;
+  text-align: center;
+}
+.TopCard .titles {
+  margin: auto 0 auto 10px;
+  width: 60%;
+  font-size: 15px;
+  white-space: nowrap;
+  line-height: 22px;
+}
+
+/* -------------------------------------------------------------------------------left card css */
+.Side_Card {
+  width: 100%;
+}
+.RightPannelCard {
+  width: 100%;
+  height: 90px;
+  float: left;
+  margin-bottom: 10px;
+  position: relative;
+  background: var(--bg);
+  box-shadow: 0 0.125rem 0.25rem var(--thirdbg);
+}
+.RightPannelCard:hover {
+  background: var(--bghover);
+}
+.RightPannelCard .thumbnail {
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+.RightPannelCard .thumbnail img {
+  width: 100%;
+  height: auto;
+  margin-top: -25px;
+}
+.RightPannelCard .movie_detail {
+  margin-left: 80px;
+  float: left;
+  padding: 10px;
+  color: var(--text);
+}
+
+/* ---------------------------------------------------------------------Side Genres Card css */
+.Genres {
+  width: 100%;
+  color: var(--text);
+}
+.Genres .list {
+  width: 85%;
+  margin: 12px auto 0 auto;
+}
+.Genres .list .item .itmes {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.1rem;
+  font-size: 0.8rem;
+}
+
+/* ----------------------------------------------------------DateVise movie show css */
+.DateVise {
+  width: 100%;
+  height: auto;
+}
+.DateVise .list {
+  width: 100%;
+  margin: 1rem auto 0 auto;
+}
+.DateVise .list .items {
+  float: left;
+  width: calc(100% / 3);
+  height: auto;
+  position: relative;
+  padding: 4px;
+}
+.DateVise .list .items span {
+  float: left;
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--secondbg);
+  color: var(--text);
+}

@@ -1,0 +1,442 @@
+.Navbar {
+  background: var(--navbarbg);
+  width: 100%;
+  height: 70px;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+.Navbar .hamburger {
+  display: none;
+}
+.Navbar .logo {
+  float: left;
+  font-size: 2rem;
+  display: flex;
+  padding: 0 4px;
+  height: 100%;
+  align-items: center;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.Navbar .logo a {
+  color: var(--secondtxt);
+  text-decoration: none;
+  list-style: none;
+  padding: 0.6rem 0;
+}
+
+.Navbar .show_menu {
+  width: auto;
+  height: 100%;
+  float: left;
+}
+
+.show_menu .main_menu_items {
+  height: 100%;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  padding-left: 1.5rem;
+  font-weight: 600;
+}
+
+.show_menu .main_menu_items a {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+  text-decoration: none;
+  list-style: none;
+  color: var(--secondtxt);
+}
+
+.show_menu .main_menu_items .menu-iconx {
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 0.5rem 0 0;
+  border-radius: 2px;
+  padding: 8px;
+}
+/* ---------------------------------------------Search input css here */
+.SearchBar {
+  display: flex;
+  float: right;
+  height: 100%;
+  margin-right: 5rem;
+}
+.SearchBar a {
+  color: transparent;
+}
+.SearchBar .search {
+  display: flex;
+  background: rgb(255 255 255 / 20%);
+  margin: auto 1rem;
+  height: 40px;
+  width: 200px;
+  border-radius: 6px;
+  color: var(--secondtxt);
+}
+
+.SearchBar .search input[type="text"] {
+  background: 0 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  color: var(--secondtxt);
+}
+
+.SearchBar .search .left_icon {
+  margin: auto auto;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SearchBar .left_icon .fa-search {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 5%;
+  margin-left: 3px;
+  justify-content: space-evenly;
+}
+/* -------------------------------------------------------------Profile css her  */
+.Navbar .Profile {
+  position: absolute;
+  right: 0px;
+  height: 70px;
+  color: white;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  width: auto;
+  font-size: 2rem;
+  text-align: center;
+}
+.Navbar .Profile .sub-menu {
+  font-size: 1.1rem;
+  flex-direction: column;
+  position: absolute;
+  text-align: left;
+  width: 12rem;
+  top: 75px;
+  right: 5px;
+  color: var(--text);
+  background: var(--bg);
+  box-shadow: -2px 4px 6px 1px var(--bg-shadow);
+  border-radius: 9px;
+}
+.Navbar .Profile .sub-menu::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform:rotate(45deg);
+  background: var(--bg);
+  position: absolute;
+  top: -9px;
+  right: 15px;
+}
+.Navbar .Profile .sub-menu .item {
+  padding: 0.5rem 15px;
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  list-style: none;
+}
+.Navbar .Profile .sub-menu .item:hover {
+  background: var(--hover);
+  color: var(--thirdbg);
+}
+.Navbar .Profile .sub-menu .item:nth-child(3) {
+  border-top: 1px solid black;
+}
+.Navbar .Profile .sub-menu .item span{
+  padding: 0 0.5rem;
+}
+
+/* --------------------------------------SideNavbar for small Screen  */
+.SideNavbar {
+  position: fixed;
+  width: 33vh;
+  left: 0;
+  height: 100vh;
+  background: #11161f;
+  color: var(--secondtxt);
+  top: 70px;
+  list-style: none;
+  overflow: auto;
+  display: none;
+  z-index: 999;
+  margin-bottom: 3rem;
+}
+.SideNavbar ul .fs-item {
+  width: 100%;
+  padding: 0;
+}
+
+.SideNavbar ul li .users {
+  position: relative;
+  background: #262627;
+  padding: 5px;
+}
+.SideNavbar ul li a {
+  color: var(--secondtxt);
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.SideNavbar ul li:hover {
+  color: rgb(120, 149, 192);
+}
+.SideNavbar ul li label {
+  padding: 1.3rem 0.5rem;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+.SideNavbar ul li label i {
+  padding-right: 0.5rem;
+  font-size: 1rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.SideNavbar ul li ul li {
+  background: black;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+}
+.SideNavbar ul li ul li:hover {
+  color: blue;
+}
+.SideNavbar ul li ul li a {
+  display: flex;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+.SideNavbar ul .ls-item {
+  padding: 0 1rem;
+}
+.SideNavbar ul .ls-item label {
+  background-image: linear-gradient(270deg, #40c6b6, #0aa1ea);
+  width: 100%;
+  padding: 0.3rem 0;
+  display: block;
+  align-items: center;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1050px) {
+  .Navbar {
+    width: 100%;
+    display: flex;
+  }
+  .Navbar .hamburger {
+    position: absolute;
+    left: 0px;
+    height: 70px;
+    color: white;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    width: auto;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .Navbar .show_menu {
+    display: none;
+  }
+  .Navbar .SearchBar {
+    display: none;
+  }
+  .SideNavbar.disable {
+    display: none;
+  }
+  .SideNavbar.active {
+    display: block;
+  }
+}
+
+/* -------------------------------------------------------------Bottom Nav css her  */
+
+.bottom_menu {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3.8rem;
+  list-style: none;
+  background: #1d2227;
+  z-index: 999;
+}
+.bottom_menu .column {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.bottom_menu .column a {
+  color: white;
+  width: 20%;
+  height: 100%;
+  background: #003049;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.bottom_menu .column h6 {
+  font-size: 0.6rem;
+}
+
+.bottom_menu .column a.active,
+.bottom_menu .column a.active .fa {
+  background: #171c24;
+  color: #50b3e3;
+}
+.bottom_menu .column a .fa-user-circle {
+  font-size: 1.2rem;
+}
+@media screen and (min-width:900px){
+  .bottom_menu{
+    display: none;
+  }
+  
+}
+
+
+----------------------------------------------------Dev 
+.ContForm {
+  width: 100%;
+  height: 100%;
+  padding: 30px 15px;
+  color: var(--text);
+}
+.form-control {
+  background-color: var(--bg);
+}
+input[type="text"] {
+  padding: 5px;
+}
+/*======================
+    404 page
+=======================*/
+
+.page_404 {
+  padding: 10px 0;
+  background: --var(--bg);
+  font-family: "Arvo", serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 250px;
+  background-position: center;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 50px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+.contant_box_404 {
+  margin-top: 10px;
+}
+/* ------------------------------------------------assets css  */
+
+.spinner {
+  width: 12rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fbf7f4;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  border: none;
+  background: #1d3557;
+  color: #f1faee;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.445);
+  margin: auto auto auto auto;
+}
+
+.spinner:hover {
+  background: #003049;
+  color: #eae2b7;
+  box-shadow: 0 1rem 1rem -1rem rgba(0, 0, 0, 0.445);
+}
+
+.btn__text {
+  margin-left: 0.8rem;
+  font-size: 15px;
+}
+
+.loding {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  border: 3px solid #dddf00;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+    border-top-color: #fcab41;
+    border-bottom-color: #80ffdb;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&display=swap");
+body {
+  --bg: white;
+  --secondbg: #edeff1;
+  --thirdbg: #00bcd4;
+  --bg-shadow: black;
+  --hover: #edeff1;
+  --text: black;
+  /* --static  */
+  --navbarbg: #171c24;
+  --secondtxt: white;
+  --static-bg: #8c53b5;
+}
+body.dark-mode {
+  --bg: black;
+  --secondbg: rgb(10 10 10);
+  --thirdbg: #6c757d;
+  --hover: rgb(24, 23, 23);
+  --text: rgb(224, 219, 219);
+  background: black;
+  transition: 1s;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+html,
+body{
+  scroll-behavior: smooth;
+}
+
+.All_Content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.All_Content .Left {
+  width: 62%;
+  border-right: 2px solid var(--thirbg);
+  padding-right: 40px;
+  margin-top: 2rem;
+  min-height: 550px;
+}
+.All_Content .Right {
+  width: 27%;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 894px) {
+  .All_Content {
+    display: block;
+  }
+  .All_Content .Left {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding-right: 0px;
+    border-right: none;
+    padding: 0;
+  }
+  .All_Content .Right {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 0;
+  }
+  .Home_Page,
+  .Search_Page,
+  .SeeMore_Page,
+  .Categoris_Page,
+  .Music_Page {
+    padding: 25px 15px;
+  }
+  .Side_Card,
+  .DateVise {
+    padding: 0 15px;
+  }
+}
+
+/* --------------------Search Page  css */
+
+.wrap {
+  width: 100%;
+  margin-bottom: 1rem;
+  /* min-height: 25rem; */
+  position: relative;
+  color: var(--text);
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid var(--thirdbg);
+  border-right: none;
+  padding: 8px;
+  height: 45px;
+  border-radius: 5px 0 0 5px;
+  background: var(--bg);
+  outline: none;
+}
+input[type="text"] {
+  color: var(--text);
+}
+
+.searchTerm:focus {
+  color: var(--thirdbg);
+}
+
+.searchButton {
+  width: 50px;
+  height: 45px;
+  border: 3px solid var(--thirdbg);
+  background: var(--thirdbg);
+  text-align: center;
+  color: var(--secondtxt);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.suggestion{
+  position: absolute;
+  width: 100%;
+  top: 44px;
+  background: white;
+  z-index: 5;
+  padding: 5px 10px;
+  box-shadow: 4px 9px 14px 1px black;
+
+}
+/* --------------------Categoris_Page  css */
+.Categoris_Page .list a {
+  text-decoration: none;
+  color: var(--text);
+}
+.Categoris_Page .list .items {
+  background: var(--secondbg);
+  margin-bottom: 0.2rem;
+}
+.Categoris_Page .list .items:hover {
+  background: var(--bg);
+}
+.Categoris_Page .list .items img {
+  width: 5rem;
+  background: rgb(196, 196, 196);
+  /* border-radius: 50%; */
+  padding: 0.5rem 0;
+}
+.Categoris_Page .list .items img:hover {
+  background: var(--bghover);
+}
+
+@media screen and (max-width: 700px) {
+  .Categoris_Page .list .items img {
+    width: 3.8rem;
+  }
+}
+/* -------------------------Profile Page css */
+.Profile_Page {
+  width: 100%;
+  overflow: none;
+  color: var(--text);
+}
+.Top_Bar .cover_photo {
+  width: 100%;
+  position: relative;
+  padding: 0 0 5rem;
+  height: 15rem;
+  z-index: 1;
+}
+.Top_Bar .cover_photo img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  object-fit: cover;
+}
+.Top_Bar .logo {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  transform: translate(20px, -50%);
+  display: block;
+  z-index: 9999;
+  overflow: hidden;
+}
+.Top_Bar .logo img {
+  border: 2px solid rgb(36, 35, 35);
+  overflow: hidden;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+}
+.Top_Bar .Slider {
+  padding: 0 1rem;
+}
+.Top_Bar .TwoButton {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.Top_Bar .TwoButton span {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  background: black;
+  height: 2px;
+  transition: all 0.1s ease-in;
+}
+.Top_Bar .TwoButton span.active {
+  transform: translateX(100%);
+  transition: all 0.1s ease-in;
+}
+.Top_Bar .TwoButton button {
+  border: none;
+  width: 50%;
+  background: transparent;
+  font-size: 1.4rem;
+  color: var(--text);
+}
+.Top_Bar .NoDataFound {
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+p.font-size,
+span.font-size {
+  font-size: 0.9rem;
+  font-weight: 500;
+  word-spacing: 2px;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* -------------------------------        footer */
+.Footer {
+  padding: 20px 30px 10px;
+  align-content: center;
+  margin-bottom: 3.8rem;
+}
+
+.Footer .social > a {
+  font-size: 27px;
+  background: var(--secondbg);
+  width: 43px;
+  display: inline-block;
+  border-radius: 0.6rem;
+  border: 1px solid var(--thirbg);
+  margin: 0 8px;
+  color: var(--text);
+}
+
+.Footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.Footer li {
+  padding: 0 10px;
+}
+
+.Footer ul a {
+  color: var(--text);
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.Footer ul a:hover {
+  opacity: 1;
+}
+
+.Footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.Footer .social > a:hover {
+  opacity: 0.9;
+  
+}
+
+.Footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text);
+  margin-bottom: 0;
+}
+@media screen and (min-width: 999px) {
+  .Footer {
+    padding: 40px 0;
+    align-content: center;
+  }
+}
