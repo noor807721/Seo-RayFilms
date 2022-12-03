@@ -1,6 +1,6 @@
 import Image from "next/image";
-import coverPhoto from "../asset/img/userCover.jpg";
-import userLogo from "../asset/img/userLogo.jpg";
+import coverPhoto from "../../public/images/userCover.jpg";
+import userLogo from "../../public/images/userLogo.jpg";
 
 const Profile = () => {
 
