@@ -1,7 +1,9 @@
 import { useRouter } from "next/router";
+import Seo from "../../component/SeeMore/Seo";
 import Card from "../../component/Home/Card";
 import { FaSearch } from "react-icons/fa";
 import { getSearch } from "../../action/home";
+import { description } from "../../static/content";
 function Search({ data }) {
   const router = useRouter();
   const getTitle = async (e) => {
@@ -15,6 +17,7 @@ function Search({ data }) {
   };
   return (
     <div className="Search_Page">
+      <Seo Title={`Search Result for "${router.query.title}" - RayFilms`} Desc={description}/>
       <div className="searchBar">
         <div className="search">
           <input
@@ -31,7 +34,7 @@ function Search({ data }) {
         </div>
         <div className="px-1 mt-3">
           <h6>
-            Results Found:- <i className="h6">{12}</i>
+            Results Found:- <i className="h6">{data.length}</i>
           </h6>
           <hr />
         </div>
@@ -47,7 +50,7 @@ function Search({ data }) {
 }
 export const getServerSideProps = async (contex) => {
   let title = contex.query.title;
-  const data = await getSearch(title);
+  const data = await getSearch(title.replace(/-/g," "));
   return {
     props: { data },
   };

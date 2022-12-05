@@ -1,6 +1,6 @@
 import React from "react";
 import  Link  from "next/link";
-import { categories } from "../../asset/var/categories";
+import { categories } from "../../static/content";
 
 const SideNav = () => {
   return (

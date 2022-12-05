@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaStar } from "react-icons/fa";
 
 function Card({ data }) {
   const { imdbId, poster_path, title, release_date, vote_average } = data;
@@ -18,7 +19,7 @@ function Card({ data }) {
               <p className="movie_year">{release_date.slice(0, 4)}</p>
               <div className="rating">
                 <span>
-                  <i className="fas fa-star"> </i> {vote_average}
+                  <FaStar /> {vote_average}
                 </span>
               </div>
             </div>

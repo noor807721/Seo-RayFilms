@@ -2,17 +2,16 @@ import React from "react";
 import  Link  from "next/link";
 
 
-function TopMovies() {
-  let TopFilme = [];  
+function TopMovies({data}) {
   return (
     <>
       <div className="TopMovies">
-        {TopFilme.map((data, i) => {
-          const {imdbId, title, poster_path,vote_average } = data;
+        {data.map((curElem, i) => {
+          const {imdbId, title, poster_path,vote_average } = curElem;
           let slug = `/details/${imdbId}/${title.replace(/ /g, "-")}`;
           return (
             <Link
-              to={slug}
+              href={slug}
               key={i}
             >
               <div className="TopCard">

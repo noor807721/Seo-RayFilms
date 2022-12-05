@@ -1,26 +1,28 @@
+import { useEffect } from "react";
 import "../styles/view.css";
 import "../styles/Nav.css";
 import "../styles/Home.css";
 import "../styles/Details.css";
-import Navbar from "../component/Nav/Navbar";
-import BotNav from "../component/Nav/BotNav";
+import Navbar,{BotNav} from "../component/Nav/Navbar";
 import Footer from "../component/Nav/Footer";
-// Right content
-// import RightCard from "../component/Home/RightCard";
 import DateVise from "../component/Home/DateVise";
+import NextNProgress from 'nextjs-progressbar';
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+
+  }, []);
 
   return (
     <>
       <div className="RayFilms">
         <Navbar />
+        <NextNProgress />
         <div className="All_Content">
           <div className="Left">
             <Component {...pageProps} />
           </div>
           <div className="Right">
             <div className="RigCon">
-              {/* <RightCard /> */}
               <DateVise />
             </div>
           </div>

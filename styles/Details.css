@@ -207,7 +207,9 @@
   width: 100%;
   margin: 1rem auto 0 auto;
 }
-
+ul{
+  margin: 0;
+}
 .DwdLink ul li {
   margin: 25px;
   padding: 10px;
@@ -241,6 +243,7 @@
   border: 0.1px solid black;
   margin-right: 8px;
   height: 99%;
+  width: 18.2rem;
 }
 .Information .Screen_shot .show_imgs .Card img {
   width: 18rem;

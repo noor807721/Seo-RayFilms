@@ -18,6 +18,15 @@ export const SliderMovie = async (req) => {
     return [];
   }
 };
+export const getRating = async () => {
+  try {
+    const res = await fetch(`${API}/top/movies`);
+    const data = await res.json();
+    return data;
+  } catch (e) {
+    return [];
+  }
+};
 export const getSearch = async (title) => {
   try {
     const res = await fetch(`${API}/search?title=${title}`);
@@ -29,11 +38,20 @@ export const getSearch = async (title) => {
 };
 export const getGenre = async ({ title, page }) => {
   try {
-    const res = await fetch(`${API}/${title}/${page}/6/-1`);
-    const data = res.json();
-    return data;
+    const res = await fetch(`${API}/${title}/${page}/9/-1`);
+    const data = await res.json();
+    if (res.status === 201) {
+      return data;
+    } else {
+      return {
+        data: [],
+      };
+    }
   } catch (e) {
-    return [];
+    console.log(e);
+    return {
+      data: [],
+    };
   }
 };
 export const getDetails = async (imdbId) => {

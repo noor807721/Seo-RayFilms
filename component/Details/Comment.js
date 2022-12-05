@@ -1,5 +1,5 @@
 import React from "react";
-import { monthNames } from "../../asset/var/categories";
+import { monthNames } from "../../static/content";
 
 const Comment = () => {
   return (

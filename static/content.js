@@ -1,47 +1,29 @@
-const base = "https://img.icons8.com/";
-
+export const description = "RayFilms is a broadband movie provider that allows individuals to stream and download movies of various genres";
+const base = "https://img.icons8.com";
 export const categories = [
-  { 0: "Action", icon: `${base}external-flat-icons-maxicons/60/undefined/external-action-movie-flat-flat-icons-maxicons-3.png` },
-  { 1: "Fantasy", icon: `${base}external-gradient-design-circle/60/undefined/external-fantasy-activities-gradient-design-circle.png` },
-  { 2: "War", icon: `${base}external-others-maxicons/60/undefined/external-war-greek-mythology-others-maxicons-3.png` },
-  { 3: "Adventure", icon: `${base}external-flaticons-flat-flat-icons/60/undefined/external-adventure-vacation-planning-guys-trip-flaticons-flat-flat-icons-2.png` },
-  { 4: "Horror", icon: `${base}external-wanicon-lineal-color-wanicon/60/undefined/external-haunted-house-halloween-wanicon-lineal-color-wanicon.png` },
-  { 5: "Family", icon: `${base}bubbles/60/undefined/family.png` },
-  { 6: "Comedy", icon: `${base}external-flaticons-lineal-color-flat-icons/60/undefined/external-comedy-movie-theater-flaticons-lineal-color-flat-icons-3.png` },
-  { 7: "Drama", icon: `${base}external-phatplus-lineal-color-phatplus/60/undefined/external-drama-love-party-phatplus-lineal-color-phatplus.png` },
-  { 8: "Crime", icon: `${base}color/60/undefined/horror.png` },
-  { 9: "Mystery", icon: `${base}external-flaticons-lineal-color-flat-icons/60/undefined/external-mystery-movie-theater-flaticons-lineal-color-flat-icons-3.png` },
-  { 10: "Documentry", icon: `${base}external-flat-icons-maxicons/60/undefined/external-action-movie-flat-flat-icons-maxicons.png` },
-  { 11: "History", icon: `${base}external-wanicon-flat-wanicon/60/undefined/external-history-university-courses-wanicon-flat-wanicon.png` },
-  { 12: "Kids", icon: `${base}external-flaticons-lineal-color-flat-icons/60/undefined/external-kid-babymaternity-flaticons-lineal-color-flat-icons.png` },
-  { 13: "Reality", icon: `${base}office/60/undefined/virtual-reality.png` },
-  { 14: "Thriller", icon: `${base}office/60/undefined/thriller.png` },
-  { 15: "Western", icon: `${base}office/60/undefined/western.png` },
-];
-export let serverdata = {
-  imdbId: "",
-    filmindustry: "fetching",
-    title: "fetching",
-    poster_path: "https://redthread.uoregon.edu/files/original/affd16fd5264cab9197da4cd1a996f820e601ee4.png",
-    release_date: "2000",
-    vote_average: "10",
-    overview: "Fetching",
-    genres:["Action"],
-    views: "0",
-    like: "0",
-    dislike: "",
-    doodstream: "",
-    d_480p: "",
-    d_720p: "",
-};
-
-export const description =
-  "RayFilms is a broadband movie provider that allows individuals to stream and download movies of various genres";
-
+    { 0: "Action", icon: `${base}/external-flat-icons-maxicons/60/undefined/external-action-movie-flat-flat-icons-maxicons-3.png` },
+    { 1: "Fantasy", icon: `${base}/external-gradient-design-circle/60/undefined/external-fantasy-activities-gradient-design-circle.png` },
+    { 2: "War", icon: `${base}/external-others-maxicons/60/undefined/external-war-greek-mythology-others-maxicons-3.png` },
+    { 3: "Adventure", icon: `${base}/external-flaticons-flat-flat-icons/60/undefined/external-adventure-vacation-planning-guys-trip-flaticons-flat-flat-icons-2.png` },
+    { 4: "Horror", icon: `${base}/external-wanicon-lineal-color-wanicon/60/undefined/external-haunted-house-halloween-wanicon-lineal-color-wanicon.png` },
+    { 5: "Family", icon: `${base}/bubbles/60/undefined/family.png` },
+    { 6: "Comedy", icon: `${base}/external-flaticons-lineal-color-flat-icons/60/undefined/external-comedy-movie-theater-flaticons-lineal-color-flat-icons-3.png` },
+    { 7: "Drama", icon: `${base}/external-phatplus-lineal-color-phatplus/60/undefined/external-drama-love-party-phatplus-lineal-color-phatplus.png` },
+    { 8: "Crime", icon: `${base}/color/60/undefined/horror.png` },
+    { 9: "Mystery", icon: `${base}/external-flaticons-lineal-color-flat-icons/60/undefined/external-mystery-movie-theater-flaticons-lineal-color-flat-icons-3.png` },
+    { 10: "Documentry", icon: `${base}/external-flat-icons-maxicons/60/undefined/external-action-movie-flat-flat-icons-maxicons.png` },
+    { 11: "History", icon: `${base}/external-wanicon-flat-wanicon/60/undefined/external-history-university-courses-wanicon-flat-wanicon.png` },
+    { 12: "Kids", icon: `${base}/external-flaticons-lineal-color-flat-icons/60/undefined/external-kid-babymaternity-flaticons-lineal-color-flat-icons.png` },
+    { 13: "Reality", icon: `${base}/office/60/undefined/virtual-reality.png` },
+    { 14: "Thriller", icon: `${base}/office/60/undefined/thriller.png` },
+    { 15: "Western", icon: `${base}/office/60/undefined/western.png` },
+  ];
   export const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
   ];
-   export let array =  [
+
+  
+  export let array =  [
     "Hotel Transylvania: Transformania",
     "Rango",
     "Deadpool",

@@ -118,6 +118,7 @@
  .Card .thumbnail {
   width: 120px;
   height: 10rem;
+  min-height: 10rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
