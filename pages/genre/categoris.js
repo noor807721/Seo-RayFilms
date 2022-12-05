@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Seo from '../../component/SeeMore/Seo';
 import {description, categories } from "../../static/content";
 
 const Categoris = () => {
