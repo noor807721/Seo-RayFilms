@@ -7,6 +7,7 @@ const Embed = ({stream}) => {
       title="Stream Player"
       src={stream}
       scrolling="no"
+      loading="lazy"
       frameBorder="0"
       allowFullScreen
     ></iframe>

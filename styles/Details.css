@@ -314,7 +314,7 @@ textarea {
   color: var(--text);
 }
 .Hedding hr {
-  height: 5px;
+  height: 3px;
   width: 100%;
   background: var(--text);
   margin: auto 0 auto 0;
