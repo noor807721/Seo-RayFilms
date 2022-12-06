@@ -1,10 +1,8 @@
-import  Link  from "next/link";
+import Link from "next/link";
+import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import Card from "./Card";
 
-
-function Slider({hedding,data}) {
-
-  
+function Slider({ hedding, data }) {
   return (
     <>
       <div className="title">
@@ -17,9 +15,13 @@ function Slider({hedding,data}) {
               <span className="see-all">SEE ALL</span>
             </Link>
           </div>
-          <div className="arrow">
-            <i className="fas fa-caret-left"></i>
-            <i className="fas fa-caret-right"></i>
+          <div className="arrow d-flex">
+            <div className="fas">
+              <FaCaretLeft />
+            </div>
+            <div className="fas">
+              <FaCaretRight />
+            </div>
           </div>
         </div>
       </div>

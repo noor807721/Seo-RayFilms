@@ -87,12 +87,14 @@
 }
 
 .title .icons .arrow .fas {
-  font-size: 25px;
-  font-weight: 900;
+  font-size: 23px;
   border: solid 1px var(--thirdbg);
   border-radius: 0.2rem;
-  margin-left: 15px;
-  padding: 2px 15px;
+  margin-left: 14px;
+  align-items: center;
+  padding: 2px 6px;
+  display: flex;
+  text-align: center;
 }
 .title .icons .arrow .fas:hover {
   background: var(--bghover);

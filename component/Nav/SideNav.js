@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import  Link  from "next/link";
 import { categories } from "../../static/content";
 
@@ -8,9 +8,9 @@ const SideNav = () => {
       <ul className="items">
         <li className="fs-item mb-2">
           <div className="users d-flex">
-            <img
+            <Image
               src="https://www.w3schools.com/howto/img_avatar.png"
-              alt=""
+              alt={"logo"}
               width={65}
               height={65}
               className="rounded circle"
